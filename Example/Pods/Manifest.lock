@@ -1,0 +1,16 @@
+PODS:
+  - QLayoutor (0.1.0)
+
+DEPENDENCIES:
+  - QLayoutor (from `../`)
+
+EXTERNAL SOURCES:
+  QLayoutor:
+    :path: ../
+
+SPEC CHECKSUMS:
+  QLayoutor: edf47396894bf14ec2ea47eb566fc9aec057c3b8
+
+PODFILE CHECKSUM: 3dd443bc1d76361be20b29d440969021018e3b10
+
+COCOAPODS: 1.4.0.beta.2
