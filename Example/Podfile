@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'QLayoutor_Example' do
+  pod 'QLayoutor', :path => '../'
+
+  target 'QLayoutor_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
