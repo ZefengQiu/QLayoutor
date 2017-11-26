@@ -22,7 +22,7 @@ pod 'QLayoutor'
 
 ## Author
 
-willqiu126, z9qiu@uwaterloo.ca
+Zefeng Qiu (Will), z9qiu@uwaterloo.ca
 
 ## License
 
