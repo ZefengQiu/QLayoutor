@@ -2,6 +2,7 @@
 Pod::Spec.new do |s|
   s.name             = 'QLayoutor'
   s.version          = '0.1.0'
+  s.module_name      = 'QLayoutor'
   s.summary          = 'Helper functions to do iOS Auto-layout (Swift).'
   s.homepage         = 'https://github.com/ZefengQiu/QLayoutor'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
