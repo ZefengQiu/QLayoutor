@@ -1,6 +1,6 @@
 # QLayoutor
 
-[![CI Status](http://img.shields.io/travis/QLayoutor.svg?style=flat)](https://travis-ci.org/willqiu126/QLayoutor)
+[![CI Status](http://img.shields.io/travis/willqiu126/QLayoutor.svg?style=flat)](https://travis-ci.org/willqiu126/QLayoutor)
 [![Version](https://img.shields.io/cocoapods/v/QLayoutor.svg?style=flat)](http://cocoapods.org/pods/QLayoutor)
 [![License](https://img.shields.io/cocoapods/l/QLayoutor.svg?style=flat)](http://cocoapods.org/pods/QLayoutor)
 [![Platform](https://img.shields.io/cocoapods/p/QLayoutor.svg?style=flat)](http://cocoapods.org/pods/QLayoutor)
