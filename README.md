@@ -11,6 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+iOS 10.0 or newer version. Swift 4.
+
 ## Installation
 
 QLayoutor is available through [CocoaPods](http://cocoapods.org). To install

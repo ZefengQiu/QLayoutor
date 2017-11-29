@@ -2,15 +2,15 @@ PODS:
   - QLayoutor (0.1.0)
 
 DEPENDENCIES:
-  - QLayoutor (from `../`)
+  - QLayoutor (from `/Users/zefengqiu/Developer/QLayoutor`)
 
 EXTERNAL SOURCES:
   QLayoutor:
-    :path: ../
+    :path: /Users/zefengqiu/Developer/QLayoutor
 
 SPEC CHECKSUMS:
-  QLayoutor: edf47396894bf14ec2ea47eb566fc9aec057c3b8
+  QLayoutor: 9498baaf39c5a2a5a2654204cc4d18e64a581c39
 
-PODFILE CHECKSUM: 3dd443bc1d76361be20b29d440969021018e3b10
+PODFILE CHECKSUM: 048c225a97ea441da10f35542284dbe2ce08eee3
 
 COCOAPODS: 1.4.0.beta.2

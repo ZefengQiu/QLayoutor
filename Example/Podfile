@@ -1,11 +1,6 @@
 use_frameworks!
 
 target 'QLayoutor_Example' do
-  pod 'QLayoutor', :path => '../'
+  pod 'QLayoutor', :path => '/Users/zefengqiu/Developer/QLayoutor'
 
-  target 'QLayoutor_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
