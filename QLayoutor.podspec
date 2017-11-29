@@ -16,5 +16,4 @@ Pod::Spec.new do |s|
   #   'QLayoutor' => ['QLayoutor/Assets/*.png']
   # }
   
-
 end

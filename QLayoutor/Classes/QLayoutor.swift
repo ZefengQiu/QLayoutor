@@ -119,12 +119,11 @@ extension UIView
   /**
    Setting item top layout.
    
-   - Parameter item: UIView or its subclass that is required to be layout.
    - Parameter padding: padding from item to superview.
    - Parameter superview: item's superview.
    - Parameter priority: layout priority, default is normal.
    */
-  public static func setTop(padding: CGFloat, superview: UIView, priority: UILayoutPriority = Priority.normal)
+  public func setTop(padding: CGFloat, superview: UIView, priority: UILayoutPriority = Priority.normal)
   {
     let layoutTop = NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: superview, attribute: .top, multiplier: 1.0, constant:  padding)
     layoutTop.priority = priority
@@ -134,22 +133,21 @@ extension UIView
   /**
    Setting item top layout using Top Layout Guide.
    
-   - Parameter item: UIView or its subclass that is required to be layout.
    - Parameter padding: padding from item to superview.
    - Parameter superview: item's superview.
    - Parameter priority: layout priority, default is high.
    */
-  public static func settingItemTopLayoutGuide(_ item: UIView, with padding: CGFloat, superVC: UIViewController, priority: UILayoutPriority = Priority.high)
+  public func setTopLayoutGuide(padding: CGFloat, superVC: UIViewController, priority: UILayoutPriority = Priority.high)
   {
     // in iOS 11 change to save area layout guide
     if #available(iOS 11, *) {
       let guide = superVC.view.safeAreaLayoutGuide
-      let topGuide = NSLayoutConstraint(item: item, attribute: .top, relatedBy: .equal, toItem: guide.topAnchor, attribute: .bottom, multiplier: 1.0, constant:  padding)
+      let topGuide = self.topAnchor.constraint(equalTo: guide.topAnchor, constant: padding)
       topGuide.priority = priority
       topGuide.isActive = true
     }else
     {
-      let topGuide = NSLayoutConstraint(item: item, attribute: .top, relatedBy: .equal, toItem: superVC.topLayoutGuide, attribute: .bottom, multiplier: 1.0, constant:  padding)
+      let topGuide = NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: superVC.topLayoutGuide, attribute: .bottom, multiplier: 1.0, constant:  padding)
       topGuide.priority = priority
       topGuide.isActive = true
     }
@@ -179,7 +177,7 @@ extension UIView
     // in iOS 11 change to save area layout guide
     if #available(iOS 11, *) {
       let guide = superVC.view.safeAreaLayoutGuide
-      let bottomGuide = NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: guide.bottomAnchor, attribute: .top, multiplier: 1.0, constant:  padding)
+      let bottomGuide = self.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: padding)
       bottomGuide.priority = priority
       bottomGuide.isActive = true
     }else {
